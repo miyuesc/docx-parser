@@ -1,0 +1,40 @@
+{
+  "name": "docx-parser",
+  "version": "1.0.0",
+  "description": "A high-performance DOCX parser with Pipeline + AST architecture for browser environments",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "dev:demo": "vite",
+    "build:demo": "vite build",
+    "build": "tsc --project tsconfig.json",
+    "build:watch": "tsc --project tsconfig.json --watch",
+    "clean": "rm -rf dist",
+    "prepublishOnly": "npm run clean && npm run build"
+  },
+  "keywords": [
+    "docx",
+    "parser",
+    "word",
+    "office",
+    "typescript",
+    "browser"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jszip": "^3.4.1",
+    "@vitejs/plugin-vue": "^4.6.2",
+    "typescript": "^5.3.0",
+    "vite": "^5.0.0",
+    "vite-plugin-checker": "^0.12.0",
+    "vue": "^3.3.0"
+  },
+  "dependencies": {
+    "jszip": "^3.10.1",
+    "vue": "^3.3.0"
+  },
+  "engines": {
+    "browsers": ">= 0.5%"
+  }
+}
